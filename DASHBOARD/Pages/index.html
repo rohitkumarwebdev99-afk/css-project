@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Project</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/65e439d1c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main>
+      <section class="left">
+        <div class="profile">
+          <div class="profile-img">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/001/609/720/original/man-face-avatar-cartoon-free-vector.jpg"
+            />
+          </div>
+          <div>
+            <p>John Doe</p>
+          </div>
+          <!-- Hidden checkbox -->
+          <input type="checkbox" id="menu-toggle" />
+
+          <!-- Hamburger icon -->
+          <label for="menu-toggle" class="menu-icon"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+
+          <!-- Dropdown links -->
+          <div class="menu">
+            <a href="#board">Dashboard</a>
+            <a href="#data">Data</a>
+            <a href="#users">Users</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="nav">
+            <i class="fa-solid fa-list-ul"></i>
+            <a href="#board">Dashboard</a>
+          </div>
+
+          <div class="nav">
+            <i class="fa-solid fa-tags"></i>
+            <a href="#data">Data</a>
+          </div>
+          <div class="nav">
+            <i class="fa-solid fa-user"></i>
+            <a href="#users">Users</a>
+          </div>
+          <div class="nav">
+            <i class="fas fa-calendar-alt"></i>
+            <a href="#schedule">Schedule</a>
+          </div>
+          <div class="nav">
+            <i class="fas fa-cog"></i>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="right">
+        <header>
+          <h1>Dashboard</h1>
+          <input type="text" id="search" placeholder="Search..." />
+        </header>
+
+        <article id="board">
+          <div>
+            <h3>Activities</h3>
+            <p>May–June 2025</p>
+          </div>
+          <div>
+            <img src="../media/BarGraph.png" alt="Dashboard Graph" />
+          </div>
+        </article>
+
+        <article id="data">
+          <h2>Dashboard Data</h2>
+          <div class="card-con">
+            <div class="card1 card">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <p class="cardHead">Total Revenue</p>
+              <p class="cardData">$456,43,22</p>
+            </div>
+            <div class="card2 card">
+              <i class="fa-solid fa-tag"></i>
+              <p class="cardHead">Total Transaction</p>
+              <p class="cardData">1,450</p>
+            </div>
+            <div class="card3 card">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p class="cardHead">Total Likes</p>
+              <p class="cardData">1,234</p>
+            </div>
+            <div class="card4 card">
+              <i class="fa-solid fa-user"></i>
+              <p class="cardHead">Total User</p>
+              <p class="cardData">856</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="user">
+          <h2>User Interaction</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Number of Users</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>January</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>March</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>1600</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article id="schedule">
+          <div class="schedule-head">
+            <h3>Today's Schedule</h3>
+            <p>See all</p>
+          </div>
+          <div class="schedule-details">
+            <div>
+              <p class="meet head">Meeting from supplier from Kutta bali</p>
+              <p class="meet detail">14:00-15:00</p>
+              <p class="meet detail">at sunset road kutta bali</p>
+            </div>
+
+            <div>
+              <p class="meet head">Meeting from supplier from Suresh</p>
+              <p class="meet detail">15:00-16:00</p>
+              <p class="meet detail">at sunset road bali</p>
+            </div>
+
+            <div>
+              <p class="meet head">Meeting from supplier from Ajay</p>
+              <p class="meet detail">12:00-1:00</p>
+              <p class="meet detail">at sunset road</p>
+            </div>
+
+            <div>
+              <p class="meet head">Meeting from supplier from Encoprice</p>
+              <p class="meet detail">2:00-3:00</p>
+              <p class="meet detail">at moring on sohna road</p>
+            </div>
+
+            <div>
+              <p class="meet head">Meeting from supplier from JK ltd</p>
+              <p class="meet detail">10:00-11:00</p>
+              <p class="meet detail">at moring tent house</p>
+            </div>
+
+            <div>
+              <p class="meet head">Meeting from supplier from Manager</p>
+              <p class="meet detail">18:00-19:00</p>
+              <p class="meet detail">at imperfectio bar sohna road</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="contact">
+          <h2>Contact Details</h2>
+          <div class="contact-inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5400466074!2d77.04417434001834!3d28.527252739872903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1770652066176!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="feedback-form">
+              <h2>Feedback</h2>
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  requird
+                /><br />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                /><br />
+                <textarea
+                  name="message"
+                  placeholder="Your Feedback"
+                  required
+                ></textarea
+                ><br />
+                <input type="submit" value="Submit Feedback" />
+              </form>
+            </div>
+          </div>
+        </article>
+        <footer>
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>&copy; 2026 your company name. All Right Reversed.</div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

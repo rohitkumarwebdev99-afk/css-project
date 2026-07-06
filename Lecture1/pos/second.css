@@ -1,0 +1,51 @@
+
+.box{
+    width: 100px;
+    height: 100px;
+
+}
+#box3{
+    background: red;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#box4{
+    background: blue;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rowcenter{
+    display:inline-block;
+    background: yellow;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 10px;
+}
+#box6{
+    background: pink;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    bottom: 0%;    
+    right:0;
+}
+#box7{
+    background: blue;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}

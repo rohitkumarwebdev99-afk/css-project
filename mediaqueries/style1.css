@@ -1,0 +1,33 @@
+#div1 {
+  width: 100%;
+  height: 300px;
+  background-color: crimson;
+}
+
+#text {
+  column-count: 1;
+  width: 90%;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+}
+@media screen and (min-width:480px){
+    #div1{
+        background-color: pink;
+        width: 80%;
+    }
+    #text{
+        column-count: 2;
+    }
+}
+@media screen and (min-width:768px){
+    #div1{
+        background-color: yellow;
+        width: 60%;
+    }
+    #text{
+        column-count: 3;
+    }
+}

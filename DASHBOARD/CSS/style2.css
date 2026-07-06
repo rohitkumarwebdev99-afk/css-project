@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sedan SC", sans-serif;
+  background-color: whitesmoke;
+}
+
+/* MAIN LAYOUT */
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+/* SIDEBAR */
+.left {
+  background: black;
+  border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* FIX */
+  position: sticky;
+  top: 1.25rem;
+  height: 90vh;
+}
+
+/* PROFILE (BLACK BOX) */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+/* MOBILE FIX WILL CHANGE THIS */
+
+/* IMAGE */
+.profile-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* NAME */
+.profile p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* NAVBAR */
+.navbar {
+  margin-top: 1rem;
+}
+
+.nav {
+  display: flex;
+  margin-left: 2rem;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.top-bar {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #d3c7b8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: none;
+  width: 150px;
+}
+
+#menu-toggle:checked ~ .dropdown {
+  display: block;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* 🔥 PROFILE FIX (MOST IMPORTANT) */
+  .profile {
+    flex-direction: row;
+    justify-content: space-between; /* KEY */
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .profile-img img {
+    width: 50px;
+  }
+
+  .profile p {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* 🔥 HAMBURGER INSIDE BLACK BOX */
+  .top-bar {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+  }
+}

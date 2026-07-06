@@ -1,0 +1,145 @@
+/* .container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border: 1px solid black  ;
+    height: 200px;
+    width :400px;
+    align-content: stretch;
+   align-content: flex-start;
+    justify-content: space-evenly;    
+   justify-content: center;
+   align-content: center; 
+   gap:10px;   
+}
+.box{
+    width:100px;
+    height:auto;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 2em;
+    float: ;
+   
+}
+#box1{
+    background-color: lightcoral;
+    order:1;
+    align-self: flex-end;
+    order:20;
+    flex-grow: 1;
+    flex-basis: none;
+
+}
+#box2{
+    background-color: lightgreen;
+    flex-grow:5;
+    order:14;
+     flex-shrink: 3; 
+}
+#box3{
+    background-color: lightskyblue;
+    order:-1;
+     order:31;
+}
+#box4{
+    background-color: lightpink;
+     order:6;
+}
+#box5{
+    background-color: lightcoral;
+}
+#box6{
+    background-color: lightgreen;
+}
+#box7{
+    background-color: lightskyblue;
+}
+#box8{
+    background-color: lightpink;
+}
+#box9{
+    background-color: lightcoral;
+}
+#box10{
+    background-color: lightgreen;
+}
+#box11{
+    background-color: lightskyblue;
+}
+#box12{
+    background-color: lightpink;
+}
+#box13{
+    background-color: lightcoral;
+}
+#box14{
+    background-color: lightgreen;
+}
+#box15{
+    background-color: lightskyblue;
+}
+#box16{
+    background-color: lightpink;
+}
+
+.container{
+    display:flex;
+    width:200px;
+    border:1px solid black;
+    margin:20px;
+    flex-wrap:nowrap;
+}
+.item{
+    padding:10px ;
+    margin:5px;
+    text-align:center;
+    font-size:18px;
+}
+.box1{
+    background-color: #f0f8ff;
+    border: 1px solid #cccccc;
+}
+.box2{
+    background-color: #ffffe0;
+    border: 1px solid #cccccc;
+}
+.box3{
+    background-color: #f0fff0;
+    border: 1px solid #cccccc;
+} */
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  gap: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  justify-content: center;
+
+}
+.box{
+  flex-basis: 120px;
+  height: 120px;
+  background-color: #0a73ff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);      
+
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: #e8f9fd;
+}
+
+.container {
+  padding: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.content-card {
+  width: 100%;
+  height: 292px;
+}
+
+p {
+  margin-top: 40px;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: 60px;
+}

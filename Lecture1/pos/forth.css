@@ -1,0 +1,9 @@
+.card{
+    /* display: block; */
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+}

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+:root{
+  --primary:#9bdd7c;
+  --secondary:#6972c3;
+  --bg:#f5f5f5;
+  --card-radius:20px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:"Sedan SC","ShortBaby",sans-serif;
+  background:var(--bg);
+  line-height:1.5;
+    overflow-x:hidden;
+}
+
+@font-face{
+  font-family:ShortBaby;
+  src:url(../media/ShortBaby-Mg2w.ttf);
+}
+
+main{
+  display:grid;
+  grid-template-columns:minmax(150px,20%) minmax(0,1fr);
+  gap:25px;
+  padding:20px;
+}
+
+/* LEFT SIDEBAR */
+
+.left{
+  background:black;
+  border-radius:30px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  position:sticky;
+  top:20px;
+  height:90vh;
+  width:100%;
+  padding:20px;
+}
+
+.image{
+  width:90px;
+  border-radius:50%;
+}
+
+.user{
+  text-align:center;
+}
+
+.user p{
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.nav{
+  font-size:13px;
+}
+
+.nav a{
+  text-transform:uppercase;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 10px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  background:#222;
+}
+
+.nav a:hover i{
+  color:gold;
+}
+
+.nav a:hover span{
+  color:lightgray;
+}
+
+/* RIGHT SIDE */
+
+.right{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-size:34px;
+}
+
+#search{
+  width:260px;
+  height:38px;
+  border-radius:25px;
+  padding:10px 15px;
+  border:1px solid #ccc;
+  transition:0.3s;
+}
+
+#search:focus{
+  outline:none;
+  border:2px solid var(--primary);
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+/* BOARD */
+
+#board{
+  background:white;
+  padding:20px;
+  border-radius:var(--card-radius);
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+#board img{
+  width:100%;
+  margin-top:10px;
+}
+
+#board h3{
+  text-transform:uppercase;
+}
+
+#board p{
+  color:#6b7280;
+  font-size:14px;
+}
+
+/* DATA CARDS */
+
+#containerdata{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+
+.card{
+  padding:20px;
+  border-radius:var(--card-radius);
+  font-family:ShortBaby,sans-serif;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  transition:0.3s;
+}
+
+.card i{
+  align-self:flex-end;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+#card1{background:lightskyblue;}
+#card2{background:lightyellow;}
+#card3{background:lightpink;}
+#card4{background:lightsteelblue;}
+
+/* TABLE */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  border-radius:20px;
+  overflow:hidden;
+  background:white;
+}
+
+table th,
+table td{
+  padding:14px;
+}
+
+table th{
+  background:#a39696;
+}
+
+table tbody tr:nth-child(even){
+  background:#f9f9f9;
+}
+
+table tbody tr:hover{
+  background:#ececec;
+}
+
+/* SCHEDULE */
+
+#schedule{
+  background:white;
+  border-radius:30px;
+  padding:20px;
+  max-height:420px;
+  overflow-y:auto;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.schedule-head{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.schedule-head h3{
+  font-size:22px;
+}
+
+.schedule-details div{
+  margin-bottom:15px;
+  padding-left:10px;
+}
+
+.schedule-details div:nth-child(odd){
+  border-left:3px solid var(--primary);
+}
+
+.schedule-details div:nth-child(even){
+  border-left:3px solid var(--secondary);
+}
+
+.head{
+  font-size:17px;
+  font-weight:600;
+}
+
+.detail{
+  color:#999;
+  font-size:14px;
+}
+
+/* CONTACT */
+
+.contact-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+iframe{
+  width:100%;
+  border-radius:30px;
+}
+
+/* FEEDBACK FORM */
+
+.feedback-form{
+  background:white;
+  border-radius:30px;
+  padding:25px;
+}
+
+.feedback-form h2{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.feedback-form textarea{
+  resize:vertical;
+  height:140px;
+}
+
+.feedback-form input[type="submit"]{
+  background:var(--primary);
+  color:white;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.feedback-form input[type="submit"]:hover{
+  background:#7ac45c;
+}
+
+/* FOOTER */
+
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+
+footer a{
+  color:white;
+  font-size:22px;
+  margin:0 10px;
+  transition:0.3s;
+}
+
+footer a:hover{
+  color:lightgray;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  main{
+    grid-template-columns:1fr;
+  }
+
+  .left{
+    position:relative;
+    height:auto;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .contact-inner{
+    grid-template-columns:1fr;
+  }
+
+}

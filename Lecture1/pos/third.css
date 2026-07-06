@@ -1,0 +1,45 @@
+.image img {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+.image {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.text1 {
+  text-align: justify;
+}
+
+.container{
+    overflow: hidden; 
+}
+
+/* .container {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.image {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.image img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.text1 {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 300px);
+  text-align: justify;
+  font-size: 16px;
+} */
+
+.text1 p{
+  margin-top:0;
+}
